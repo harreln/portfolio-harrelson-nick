@@ -38,7 +38,9 @@ temperature and a subjective decription of damage through SEPARATE charts). This
 made the results appear inconclusive due to a lack of data. For example, there
 was o-ring damage seen on the hottest and coldest data points making it seem
 like the damage occurs regardless. These extremes are also evaluated incorrectly
-due to the small sample size. 
+due to the small sample size. In addition data was included from horizontal rocket 
+tests, which do not match the same conditions during launch and are effectively
+meaningless.
 
 
 **Prompt:** On page 23, Tufte presents a graph that provides visual evidence
@@ -50,14 +52,14 @@ in 24 previous flight." Describe the structure of this data set:
 and categorical (nominal or ordinal and number of levels). 
 
 **Response:**  23 observations. Two variables per observation. 
-O-ring damage index, a discrete quantitative variable. 
-Temperature of field joints at launch, a continuous quantitative variable. 
+- O-ring damage index, a discrete quantitative variable. 
+- Temperature of field joints at launch, a continuous quantitative variable. 
 
 **Prompt:** Summarize the main thesis of the paper.  
 
 **Response:** There may have been much pressure to launch the challenger,
 but an effective chart would have easily convinced officials it shouldn't have.
 Instead, there were poor decisions in presenting the data that obscured it, made
-it difficult to read, and utilized weak formats. A clear relationship should be
-shown with the data at the center, allowing readers to effectively interpret the
-chart without prior knowledge. 
+it difficult to read, and utilized weak formats. A clear relationship (in this 
+case a comparison) should be shown with the data at the center, allowing readers 
+to effectively interpret the chart without prior knowledge. 
