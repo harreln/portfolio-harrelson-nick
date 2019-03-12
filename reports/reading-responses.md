@@ -1,28 +1,65 @@
 
-week 2 reading prompts
-----------------------
+## week 2 reading prompts
 
-Tufte, Edward (1997) The decision to launch the space shuttle Challenger. In: *Visual and statistical thinking: Displays of evidence for making decisions.* Cheshire, CT: Graphics Press, 16--31.
+Tufte, Edward (1997) The decision to launch the space shuttle
+Challenger. In: *Visual and statistical thinking: Displays of evidence
+for making decisions.* Cheshire, CT: Graphics Press, 16–31.
 
-**Prompt:** Tufte says, "Regardless of the indirect cultural causes of the accident, there was a clear proximate cause." Summarize Tufte's explanation of the proximate cause.
+**Prompt:** Tufte says, “Regardless of the indirect cultural causes of
+the accident, there was a clear proximate cause.” Summarize Tufte’s
+explanation of the proximate cause.
 
-**Response:** Those making the launch decision were unable to see a clear link between o-ring failure and cool temperatures. The evidence they required needed proper analysis, as well as proper presentation in order to make a credible argument. The evidence they got however, was in the form of 13 charts poorly made the day of, and presented late at night.
+**Response:** Those making the launch decision were unable to see a
+clear link between o-ring failure and cool temperatures. The evidence
+they required needed proper analysis, as well as proper presentation in
+order to make a credible argument. The evidence they got however, was in
+the form of 13 charts poorly made the day of, and presented late at
+night.
 
-**Prompt:** Describe the evidence the author presents to support those ideas.
+**Prompt:** Describe the evidence the author presents to support those
+ideas.
 
-**Response:** The first chart describes previous damage to shuttle o-rings but makes no connection to temperatures, the argument of interest. In addition, it has low credability stemming from the hand-written edits and a lack of authorship. There is also no simple metric for the reader to assess damage, instead there are specific o-ring measurements that would only make sense to a person working directly with the o-rings.
+**Response:** The first chart describes previous damage to shuttle
+o-rings but makes no connection to temperatures, the argument of
+interest. In addition, it has low credability stemming from the
+hand-written edits and a lack of authorship. There is also no simple
+metric for the reader to assess damage, instead there are specific
+o-ring measurements that would only make sense to a person working
+directly with the o-rings.
 
-**Prompt:** What data were used in making the decision to launch? What data were not used but should have been used (according to Tufte) in making the launch decision?
+**Prompt:** What data were used in making the decision to launch? What
+data were not used but should have been used (according to Tufte) in
+making the launch decision?
 
-**Response:** All the data points they had should have been used in constructing these charts, instead they only used a small subset of data points (relating temperature and a subjective decription of damage through SEPARATE charts). This made the results appear inconclusive due to a lack of data. For example, there was o-ring damage seen on the hottest and coldest data points making it seem like the damage occurs regardless. These extremes are also evaluated incorrectly due to the small sample size.
+**Response:** All the data points they had should have been used in
+constructing these charts, instead they only used a small subset of data
+points (relating temperature and a subjective decription of damage
+through SEPARATE charts). This made the results appear inconclusive due
+to a lack of data. For example, there was o-ring damage seen on the
+hottest and coldest data points making it seem like the damage occurs
+regardless. These extremes are also evaluated incorrectly due to the
+small sample size.
 
-**Prompt:** On page 23, Tufte presents a graph that provides visual evidence that the "launch was completely outside the engineering database accumulated in 24 previous flight." Describe the structure of this data set:
+**Prompt:** On page 23, Tufte presents a graph that provides visual
+evidence that the “launch was completely outside the engineering
+database accumulated in 24 previous flight.” Describe the structure of
+this data set:
 
--   Number of observations
--   Data structure: classify each variable as quantitative (continuous or discrete) and categorical (nominal or ordinal and number of levels).
+  - Number of observations
+  - Data structure: classify each variable as quantitative (continuous
+    or discrete) and categorical (nominal or ordinal and number of
+    levels).
 
-**Response:** 23 observations. Two variables per observation. O-ring damage index, a discrete quantitative variable. Temperature of field joints at launch, a continuous quantitative variable.
+**Response:** 23 observations. Two variables per observation. O-ring
+damage index, a discrete quantitative variable. Temperature of field
+joints at launch, a continuous quantitative variable.
 
 **Prompt:** Summarize the main thesis of the paper.
 
-**Response:** There may have been much pressure to launch the challenger, but an effective chart would have easily convinced officials it shouldn't have. Instead, there were poor decisions in presenting the data that obscured it, made it difficult to read, and utilized weak formats. A clear relationship should be shown with the data at the center, allowing readers to effectively interpret the chart without prior knowledge.
+**Response:** There may have been much pressure to launch the
+challenger, but an effective chart would have easily convinced officials
+it shouldn’t have. Instead, there were poor decisions in presenting the
+data that obscured it, made it difficult to read, and utilized weak
+formats. A clear relationship should be shown with the data at the
+center, allowing readers to effectively interpret the chart without
+prior knowledge.
