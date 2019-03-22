@@ -1,3 +1,15 @@
+```{r echo = FALSE, out.width = "100%"}   
+knitr::include_graphics("resources/temp_port_pic.gif")    
+```
+
+<small>
+<br>
+<i>abstract</i> 
+by matthew venn is licensed under 
+<a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">Attribution-ShareAlike 2.0</a>
+<br>
+</small>
+
 ---
 output: github_document
 ---
