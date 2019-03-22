@@ -1,5 +1,5 @@
 
-<img src="resources/temp_port_pic.gif" width="100%" /> <small> <br> <i>abstract</i> by matthew venn is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/legalcode">Attribution-ShareAlike 2.0</a> <br> </small>
+<img src="resources/temp_port_pic.gif" width="100%" /> <small> <br> <i>abstract</i> by matthew venn is licensed under <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a> <br> </small>
 
 Portfolio of data displays
 ==========================
