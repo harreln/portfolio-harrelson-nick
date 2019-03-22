@@ -5,6 +5,8 @@ date: "March 22, 2019"
 output: 
   github_document: 
     pandoc_args: "--webtex"
+bibliography: "../resources/references.bib"
+link_citations: yes
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -12,15 +14,19 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Test Heading
 
-There should be content here.
+There should be content here. 
+Visualization is a great place to start with R programming, because the payoff is 
+so clear: you get to make elegant and informative plots that help you understand 
+data [@Wickham+Grolemund:2017]. 
+
+Tufte helped brige the gap between how the engineers were thinking about a problem and how they were presenting a problem [@TufteChallenger].
 
 ## Try writing an equation 
 
 $$
-x^2 + y^2 = r^2
-$$
-
-
-$$
 m\ddot{x} + c\dot{x} + kx = F
 $$
+
+## References
+
+<div id="refs"></div>
