@@ -1,11 +1,9 @@
 ---
 output: github_document
 ---
-
 ```{r echo = FALSE, out.width = "100%"}   
 knitr::include_graphics("resources/temp_port_pic.gif")    
 ```
-
 <small>
 <br>
 <i>abstract</i> 
