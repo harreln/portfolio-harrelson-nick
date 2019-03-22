@@ -51,7 +51,8 @@ in 24 previous flight." Describe the structure of this data set:
 - Data structure: classify each variable as quantitative (continuous or discrete)
 and categorical (nominal or ordinal and number of levels). 
 
-**Response:**  23 observations. Two variables per observation. 
+**Response:**  23 observations. Two variables per observation:
+
 - O-ring damage index, a discrete quantitative variable. 
 - Temperature of field joints at launch, a continuous quantitative variable. 
 
