@@ -2,9 +2,10 @@
 title: "Temporary D1 Portfolio"
 author: "Nick Harrelson"
 date: "March 22, 2019"
-output: github_document
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -12,3 +13,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Test Heading
 
 There should be content here.
+
+## Try writing an equation 
+
+$$
+x^2 + y^2 = r^2
+$$
+
+
+$$
+m\ddot{x} + c\dot{x} + kx = F
+$$
