@@ -1,6 +1,17 @@
 
 ## correspondence
 
+### 2019-03-25
+
+**RL** The links on the README page all work. No problems so far.
+
+I don’t see any data. I would have hoped that by now you would have been
+examining some data for graphing, even if a graph wasn’t ready. I can’t
+emphasize enough how important it is that you work ahead on acquiring
+data that meets the data requirements for the various displays. This is
+the single most important obstacle that has kept past students from
+being as successful as they might have been.
+
 ### 2019-03-10
 
 **RL** I’ve revised the prompts for the week 2 reading. Please update
