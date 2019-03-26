@@ -14,7 +14,7 @@ output: github_document
 
 I don't see any data. I would have hoped that by now you would have been examining some data for graphing, even if a graph wasn't ready. I can't emphasize enough how important it is that you work ahead on acquiring data that meets the data requirements for the various displays. This is the single most important obstacle that has kept past students from being as successful as they might have been. 
 
-
+**NH** Thanks for the feedback. I have been working on the first visualization, however I am still working out of my explore file and haven't moved individual parts into carpentry, design, clean data, etc. These will be available shortly.
 
 
 
