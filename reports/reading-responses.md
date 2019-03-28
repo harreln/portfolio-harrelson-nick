@@ -52,6 +52,11 @@ variable name: Bacteria Type
 -   type: categorical
 -   levels (if categorical): 16
 
+variable name: Gram Positive/Negative
+
+-   type: categorical
+-   levels (if categorical): 2
+
 variable name: Minimum Concentration
 
 -   type: quantitative
@@ -59,6 +64,8 @@ variable name: Minimum Concentration
 **Prompt:** The article title is "Fifteen displays about one thing." After reading the entire article, what is the "one thing?" Note that the "one thing" might imply multiple goals or more than one question.
 
 **Response:** The "one thing" is identifying which drug and concentration (or combination of) would be best for treating a specific bateria. A secondary goal would be identifying the best drug for a specific class of bateria (gram positive or negative).
+
+As pointed out in class, there may be different objectives for different people. Most of us answered "the scientist's question" with the above, but a doctor/patient would be most interested in treatment in general. For example, gram type is a relatively quick test, while identifying the specific bacteria takes much longer. Knowing what possible treatments you would need based on the limited information could make a difference for a patient.
 
 **Prompt:** In your opinion, which of the 15 displays best answers the question(s) about the "one thing?"
 
