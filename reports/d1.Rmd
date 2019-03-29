@@ -18,7 +18,9 @@ Satisfying the requirements for:
 library("knitr")
 include_graphics("../figures/boxplot-d1.png")
 ```
-<center> Display 1: Boxplot of WineMag.com reviews. </center>
+Display 1: Boxplot of WineMag.com reviews.
+
+## Prose
 
 The plot above uses data scrapped from WineMag.com, a website that compiles wine reviews made by credible journalists. This dataset was scraped and made available on Kaggle by Zach Thoutt [@KaggleWine]. Personally, I have only been drinking wine for about the last year and although I have started being able to taste some subtle differences between wines I am absolutely clueless when it comes to buying it. Most of my purchases are made from the reccomendations of friends or, for better or worse, guessing and checking. Recently, I expressed this to my friend's father and he sugested I try some South American wines because "you can get some stellar South American blends for only $15." I wanted to be able to confirm this theory as well as make a plot that new wine drinkers could use to generally direct their purchasing choices. 
 
