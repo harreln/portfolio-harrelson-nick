@@ -4,6 +4,18 @@ output: github_document
 
 ## correspondence 
 
+### 2019-03-29
+
+**RL**  D1 presentation notes. 
+
+The introduction you gave us verbally is the basis for a written introduction in the report. 
+
+Are the data current? Can you obtain the winemag.com data yourself to bring it up to date?
+
+I'm not sure binning the wine rating into bad and good is the best way to show the data. I wonder if a different graph design (scatter plot?) would better suit the data. 
+
+A possible addition is a horizontal bar chart to the right that shows the N, number of wines by continent. Later in the term I can help you place the graphs side by side. For now you might try creating a separate display of N. 
+
 
 
 

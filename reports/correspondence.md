@@ -1,6 +1,25 @@
 
 ## correspondence
 
+### 2019-03-29
+
+**RL** D1 presentation notes.
+
+The introduction you gave us verbally is the basis for a written
+introduction in the report.
+
+Are the data current? Can you obtain the winemag.com data yourself to
+bring it up to date?
+
+I’m not sure binning the wine rating into bad and good is the best way
+to show the data. I wonder if a different graph design (scatter plot?)
+would better suit the data.
+
+A possible addition is a horizontal bar chart to the right that shows
+the N, number of wines by continent. Later in the term I can help you
+place the graphs side by side. For now you might try creating a separate
+display of N.
+
 ### 2019-03-25
 
 **RL** The links on the README page all work. No problems so far.
@@ -11,6 +30,11 @@ emphasize enough how important it is that you work ahead on acquiring
 data that meets the data requirements for the various displays. This is
 the single most important obstacle that has kept past students from
 being as successful as they might have been.
+
+**NH** Thanks for the feedback. I have been working on the first
+visualization, however I am still working out of my explore file and
+haven’t moved individual parts into carpentry, design, clean data, etc.
+These will be available shortly.
 
 ### 2019-03-10
 
