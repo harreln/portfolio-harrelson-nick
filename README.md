@@ -4,7 +4,7 @@
 Portfolio of data displays
 ==========================
 
-Nick Harrelson 2019-03-22
+Nick Harrelson 2019-03-29
 
 Introduction
 ------------
@@ -14,8 +14,8 @@ This portfolio is being made to satisy requirements for ME477 Visualizing Data t
 Displays and critiques
 ----------------------
 
-[Display 1](reports/d1-temp.md) Title of your graph
-State the type of graph (strip plot or box plot) and summarize the main points of the report.
+[Display 1](reports/d1.md) Wine Reviews
+This is a boxplot made to assist novice wine drinkers with purchasing quality wine based on continent and price.
 
 Discussion notes
 ----------------
