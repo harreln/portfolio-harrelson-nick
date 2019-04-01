@@ -39,10 +39,9 @@ Explain each design choice and cite its supporting reference
 
 Comments from peers
 
--   Does the data structure satisfy the portfolio display requirements?
--   From the Doumont paper, what type of story is being told?
--   Is the graph type suited to the data structure?
--   Other suggestion
--   etc
+-   vertical lines for comparisons at dollar amounts
+-   inflation on prices (years)
+-   stuff for class, introduction, then plot, then choices
+-   where the division is between good/bad may vary
 
 Robbins N (2013a) General principles for creating effective graphs. *Creating More Effective Graphs*. Chart House, Wayne, NJ, 154–225 <http://www.nbr-graphs.com/resources/recommended-books/>
