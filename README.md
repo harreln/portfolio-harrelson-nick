@@ -4,7 +4,7 @@
 Portfolio of data displays
 ==========================
 
-Nick Harrelson 2019-03-29
+Nick Harrelson 2019-04-04
 
 Introduction
 ------------
@@ -23,3 +23,5 @@ Discussion notes
 [Reading responses](reports/reading-responses.md) Notes from the data graphics literature on elements of design and visual rhetoric.
 
 [Presentation prompts](reports/presentation-prompts.md) Prompts that question the decisions made during the creation of each visualization.
+
+[Reflections on rhetoric](reports/rhetoric_reflections.md) Reflection on the ideas of data journalists in discovering stories.
