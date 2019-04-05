@@ -4,7 +4,7 @@
 Portfolio of data displays
 ==========================
 
-Nick Harrelson 2019-03-29
+Nick Harrelson 2019-04-05
 
 Introduction
 ------------
@@ -15,7 +15,12 @@ Displays and critiques
 ----------------------
 
 [Display 1](reports/d1.md) Wine Reviews
+
 This is a boxplot made to assist novice wine drinkers with purchasing quality wine based on continent and price.
+
+[Display 2](reports/d2.md) California Agricultural Commodities
+
+This is a multiway plot investigating the effects of drought on Californian agricultural markets.
 
 Discussion notes
 ----------------
@@ -23,3 +28,5 @@ Discussion notes
 [Reading responses](reports/reading-responses.md) Notes from the data graphics literature on elements of design and visual rhetoric.
 
 [Presentation prompts](reports/presentation-prompts.md) Prompts that question the decisions made during the creation of each visualization.
+
+[Reflections on rhetoric](reports/rhetoric_reflections.md) Reflection on the ideas of data journalists in discovering stories.
