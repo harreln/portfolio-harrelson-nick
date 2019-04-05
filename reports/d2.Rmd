@@ -1,0 +1,28 @@
+---
+title: "Display 2 - Multiway Plot"
+author: "Nick Harrelson"
+date: "April 5, 2019"
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
+bibliography: "../resources/references.bib"
+link_citations: yes
+csl: "../resources/journal-of-glaciology.csl"
+
+---
+
+Satisfying the requirements for:
+
+* A multiway plot
+
+```{r setup, echo=FALSE}
+library("knitr")
+include_graphics("../figures/multiway-d2.png")
+```
+
+## Prose
+
+
+## References
+
+<div id="refs"></div>

@@ -51,3 +51,40 @@ Comments from peers
 * stuff for class, introduction, then plot, then choices
 * where the division is between good/bad may vary
 
+## D2 multiway
+
+State the number of observations: 177
+
+List the variables:
+
+* Market value (USD billions)
+    + continuous quantitative variable
+* Commodity
+    + nominal categorical with 24 levels
+* Year
+    + ordinal categorical with 8 levels
+* Drought Intensity
+    + ordinal catergorical with 6 levels
+
+State the graph type: multiway plot
+
+Explain why the graph type is suited to the data structure:
+
+There is enough overlap between the years and commoditities for a multiway plot. The commodities that fell out of the top 20 are simply not listed for those years. This plot helps explain the trends within each commodity while still allowing you to get a picture of the overall market.
+
+Explain each design choice and cite its supporting reference
+
+* Reordered the commodities based on median market value. Allows the reader to better understand the data [@Robbins2013a, 161].
+* Made commodity the facet to organize by, I think it told the more interesting story. 
+* Multiway plot prevents superimposed data [@Robbins2013a, 170].
+* Chose to augment with drought data to add more context.
+
+Comments from peers
+
+Does the data structure satisfy the portfolio display requirements?
+From the Doumont paper, what type of story is being told?
+Is the graph type suited to the data structure?
+Other suggestion
+etc
+
+## Resources
