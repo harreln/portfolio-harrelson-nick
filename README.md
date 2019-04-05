@@ -4,7 +4,7 @@
 Portfolio of data displays
 ==========================
 
-Nick Harrelson 2019-04-04
+Nick Harrelson 2019-04-05
 
 Introduction
 ------------
@@ -15,7 +15,12 @@ Displays and critiques
 ----------------------
 
 [Display 1](reports/d1.md) Wine Reviews
+
 This is a boxplot made to assist novice wine drinkers with purchasing quality wine based on continent and price.
+
+[Display 2](reports/d2.md) California Agricultural Commodities
+
+This is a multiway plot investigating the effects of drought on Californian agricultural markets.
 
 Discussion notes
 ----------------
