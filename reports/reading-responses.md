@@ -78,3 +78,24 @@ As pointed out in class, there may be different objectives for different people.
 **Prompt:** Re-read Wainer's conclusion section. What main points does he make about graph design or visual rhetoric that you could apply to your own work this term.
 
 **Response:** Using data visualizations for evidence is useless without having a question you want to answer in mind. He references Figure 2.20 which uses the same data but organizes it in a much different way to answer the opposite question of interest (not what drug should treat this bacteria rather what bacteria does this drug treat). You need to think about what you want your plot to show or illustrate and create it around that goal. Otherwise you risk showing something irrelevant and could cloud your argument in the process.
+
+week 6 reading prompts
+----------------------
+
+Dragga, Sam & Dan Voss (2001) Cruel pies: The inhumanity of technical illustrations. *Technical Communication* 48(3): 265--274.
+
+**Prompt:** Explain how the prevalent treatment of ethics in visual communication is lacking.
+
+**Response:** Most discussions regarding ethics in statistics surround misleading readers, and preventing misrepresentation and deception. However, this article focuses primarily on the ethics surrounding human illness/death data. Too often people are overlooked as just numbers, and the emotional/painful aspects of the story are lost. This can be seen as somewhat disrespectful to those who have suffered. Even if written technical communication has gotten better with this practice as a whole, visual communication has been lacking..
+
+**Prompt:** Explain the purpose of "humanizing" data displays depicting human suffering or death.
+
+**Response:** It reminds the reader that there are actual people behind this data with actual lives. Leaving out this informations lets readers interpret the data almost as if they were looking at lab rat data, completely forgetting the humanizing aspects of it all.
+
+**Prompt:** Consider the authors' attempts at redesigning such data displays. Did one in particular strike you as ineffective? Explain
+
+**Response:** The logger graphic struck me as ineffective. While the cartoon does do its job of reminding people of the type of work entailed, I don't think the cartoon is humanizing enough to relate to. Perhaps an image of a car crushed by a falling tree would be better and more serious. I did like the little box that lists the risks involved, it was succint and did not distract from the rest of the graphic.
+
+**Prompt:** Did one in particular strike you as effective? Explain.
+
+**Response:** I think the baby graphic was incredibly effective because of the thin line it has to traverse. Showing an infant being harmed in any capacity is a big no, but showing the stroller infront of the stairs really helped me understand the risks, the previous graphic didn't give me any understanding as to why strollers had any safety concerns. Including the arrow and ambulance also added a simple cause and effect that wasn't hard to interpret.
