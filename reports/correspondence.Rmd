@@ -4,6 +4,32 @@ output: github_document
 
 ## correspondence 
 
+### 2019-04-19
+
+**RL**  D3 presentation notes. 
+
+Good work 
+
+Use alpha to make the dots partially transparent 
+
+Try making a finer division on the sizes 
+
+Use a shape = 21 to get a separate color an fill
+
+Account for inflation  
+
+Maybe add a label in each panel for one country in the upper right and one in the lower left 
+
+Maybe substitute a mean for the three years 
+
+
+
+
+
+
+
+
+
 
 ### 2019-04-05
 

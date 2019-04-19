@@ -1,6 +1,44 @@
 
 ## correspondence
 
+### 2019-04-19
+
+**RL** D3 presentation notes.
+
+Good work
+
+Use alpha to make the dots partially transparent
+
+Try making a finer division on the sizes
+
+Use a shape = 21 to get a separate color an fill
+
+Account for inflation
+
+Maybe add a label in each panel for one country in the upper right and
+one in the lower left
+
+Maybe substitute a mean for the three years
+
+### 2019-04-05
+
+**RL** D2 presentation notes.
+
+Make the quantitative variable percent of market, or “market share”
+
+Perhaps ignoring years and instead have two categories: drought and
+crop, then the quantitative variable is the percent of market for that
+crop in that drought condition.
+
+This entails computing the total annual market value of all crops that
+year then for a given crop and drought condition, summing the crop
+value, summing the all-crop values over those years with that
+droughtcondition, then dividing for a percentage.
+
+### 2019-04-05
+
+**RL** D2 presentation notes.
+
 ### 2019-03-29
 
 **RL** D1 presentation notes.
