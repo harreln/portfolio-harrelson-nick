@@ -30,6 +30,10 @@ This is a boxplot made to assist novice wine drinkers with purchasing quality wi
 
 This is a multiway plot investigating the effects of drought on Californian agricultural markets.
 
+[Display 3](reports/d3.md) Does money buy happiness?
+
+Investigating the ties between hapiness and GDP of nations using faceted scatter plots.
+
 ## Discussion notes 
 
 [Reading responses](reports/reading-responses.md) Notes from the data graphics literature on elements of design and visual rhetoric. 

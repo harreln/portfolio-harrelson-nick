@@ -4,7 +4,7 @@
 Portfolio of data displays
 ==========================
 
-Nick Harrelson 2019-04-05
+Nick Harrelson 2019-04-19
 
 Introduction
 ------------
@@ -21,6 +21,10 @@ This is a boxplot made to assist novice wine drinkers with purchasing quality wi
 [Display 2](reports/d2.md) California Agricultural Commodities
 
 This is a multiway plot investigating the effects of drought on Californian agricultural markets.
+
+[Display 3](reports/d3.md) Does money buy happiness?
+
+Investigating the ties between hapiness and GDP of nations using faceted scatter plots.
 
 Discussion notes
 ----------------
