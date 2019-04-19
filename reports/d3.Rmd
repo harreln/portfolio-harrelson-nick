@@ -1,0 +1,33 @@
+---
+title: "Display 3 - Scatter Plot"
+author: "Nick Harrelson"
+date: "April 19, 2019"
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
+bibliography: "../resources/references.bib"
+link_citations: yes
+csl: "../resources/journal-of-glaciology.csl"
+
+---
+
+Satisfying the requirements for:
+
+* A scatter plot
+
+Data structure:
+
+* Happiness Index (0-10)
+    + Continuous quantitative variable
+* GDP (Billions of USD)
+    + Continuous quantitative variable
+* Populations
+    + Continuous quantitative variable
+* Region
+    + Categorical variable with 9 levels
+    
+
+```{r setup, echo=FALSE}
+library("knitr")
+include_graphics("../figures/scatter-d3.png")
+```

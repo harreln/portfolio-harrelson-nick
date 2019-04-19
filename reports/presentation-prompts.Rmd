@@ -87,4 +87,51 @@ Is the graph type suited to the data structure?
 Other suggestion
 etc
 
+fraction of market value total
+new multiway using drought and commodities
+
+## D3 correlations 
+
+State the number of observations:  
+
+List the variables: 
+
+* Happiness Index (0-10)
+    + Continuous quantitative variable
+* GDP (Billions of USD)
+    + Continuous quantitative variable
+* Populations
+    + Continuous quantitative variable
+* Region
+    + Categorical variable with 9 levels
+    
+
+State the graph type: scatter plot
+
+Explain why the graph type is suited to the data structure:  
+
+- we are exploring the correlation between two quantitative variables 
+- facets used to divide the data by given factors
+- population, is not critical, but easily shown via the point size
+
+Explain each design choice and cite its supporting reference 
+
+* Reordered the factes based on median happiness. Allows the reader to better understand the data [@Robbins2013a, 161].
+* Chose to augment with population data for more context.
+* Log scale used to fix aspect ratio. 
+* Made points slightly transparent to increase readability. Overlapping plotting symbols must be distinct [@Robbins2013a, 165].
+* Used facets instead of different colors to divide regions. Avoiding superposed data increases readibility [@Robbins2013a, 171].
+
+Comments from peers 
+
+- Does the data structure satisfy the portfolio display requirements?  
+- From the Doumont paper, what type of story is being told? 
+- Is the graph type suited to the data structure? 
+- Other suggestion 
+- etc
+
+
+
+
+
 ## Resources
