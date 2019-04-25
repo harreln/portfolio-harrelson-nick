@@ -130,6 +130,11 @@ Comments from peers
 - Other suggestion 
 - etc
 
+label points of interest
+mean for years might remove blobs
+does gdp buy happiness?
+might use this for d7 micromap instead? then use scatterplot for something else
+
 
 
 
