@@ -56,11 +56,11 @@ ad    <- image_scale(ad, "x500")
 the_graph <- image_scale(the_graph, "x500")
 
 # append to the graph image 
-final_img <- image_append(c(ad, the_graph), stack = FALSE)
-
+#final_img <- image_append(c(ad, the_graph), stack = FALSE)
+#MOVE
 
 # headline box same width as figure 
-width  <- image_info(final_img)[["width"]]
+width  <- image_info(the_graph)[["width"]]
 
 # select a height (pixels) by trial and error
 height <- 60
@@ -82,7 +82,7 @@ sub_box <- image_blank(width = width, height = height, color = rcb("pale_Gray"))
 
 # add the headline text to the box 
 sub_box <- image_annotate(sub_box, 
-                           text     = "Despite only smoking approximately 20% more (Nat. Inst. on Drug Abuse), men develop oral cancer at twice the rate of women. Avoiding tobacco\n products and living a healthy lifestlye is the only method of prevention.", 
+                           text     = "Despite only smoking approximately 20% more (Nat. Inst. on Drug Abuse), men develop oral cancer at twice the rate\n of women. Avoiding tobacco products and living a healthy lifestlye is the only method of prevention.", 
                            gravity  = "west", 
                            location = "+10+0", 
                            size     = 25, 
@@ -91,7 +91,10 @@ sub_box <- image_annotate(sub_box,
 
 
 # join the headline to the image 
-final_img <- image_append(c(text_box, sub_box, final_img), stack = TRUE)
+final_img <- image_append(c(text_box, sub_box, the_graph), stack = TRUE)
+# join the ad to the rest
+final_img <- image_append(c(ad, final_img), stack = FALSE)
+
 
 # and write to file
 image_write(final_img, 
