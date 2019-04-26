@@ -135,7 +135,48 @@ mean for years might remove blobs
 does gdp buy happiness?
 might use this for d7 micromap instead? then use scatterplot for something else
 
+## D4 injuries or fatalities displayed ethically  
 
+**Context** 
+
+Type of injury or fatality: Oral cancer cases
+
+People affected: Americans: hispanic, asian, black, white
+
+Over what span of time: Lifetime
+
+
+
+**Graph the data conventionally**
+
+- If you are redesigning someone else's graph, include an image of the original 
+- If not, graph the data yourself using a graph type suited to the data  
+
+State the number of observations:  
+
+List the variables: 
+
+* Race
+    + Nominal Categorical variable with 4 levels
+* Gender
+    + Nominal Categorical variable with 2 levels
+* Age
+    + Ordinal Categorical variable with 8 levels
+* Rate per 100,000
+    + Continuous quantitative varible 
+
+State the graph type: Dot plot
+
+Explain why the graph type is suited to the data structure: 
+
+- Comparing a single quantitative variable against multiple categories.
+- Male/female plotted on the same axes due to the overlap in other categories. Also allows easy comparison of the two.
+
+Explain the visual-rhetoric features of the graph that make it unethical:  
+
+- Now that I think about it, I'm not sure how much of the graphic is actually used to convey humanity. This instead comes off as a warning/no smoking advert. Which is still grim, but a slightly different goal than empathy. 
+
+Peer feedback:
 
 
 

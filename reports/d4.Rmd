@@ -1,0 +1,33 @@
+---
+title: "Display 3 - Injuries/Fatalities"
+author: "Nick Harrelson"
+date: "April 26, 2019"
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
+bibliography: "../resources/references.bib"
+link_citations: yes
+csl: "../resources/journal-of-glaciology.csl"
+
+---
+
+Satisfying the requirements for:
+
+* injuries/fatalities
+
+Data structure:
+
+* Race
+    + Nominal Categorical variable with 4 levels
+* Gender
+    + Nominal Categorical variable with 2 levels
+* Age
+    + Ordinal Categorical variable with 8 levels
+* Rate per 100,000
+    + Continuous quantitative varible 
+    
+
+```{r setup, echo=FALSE}
+library("knitr")
+include_graphics("../figures/d4.png")
+```
