@@ -4,7 +4,7 @@
 Portfolio of data displays
 ==========================
 
-Nick Harrelson 2019-04-19
+Nick Harrelson 2019-04-26
 
 Introduction
 ------------
@@ -25,6 +25,8 @@ This is a multiway plot investigating the effects of drought on Californian agri
 [Display 3](reports/d3.md) Does money buy happiness?
 
 Investigating the ties between hapiness and GDP of nations using faceted scatter plots.
+
+[Display 4](reports/d4.md) Oral Cancer
 
 Discussion notes
 ----------------
