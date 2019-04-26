@@ -99,3 +99,17 @@ Dragga, Sam & Dan Voss (2001) Cruel pies: The inhumanity of technical illustrati
 **Prompt:** Did one in particular strike you as effective? Explain.
 
 **Response:** I think the baby graphic was incredibly effective because of the thin line it has to traverse. Showing an infant being harmed in any capacity is a big no, but showing the stroller infront of the stairs really helped me understand the risks, the previous graphic didn't give me any understanding as to why strollers had any safety concerns. Including the arrow and ambulance also added a simple cause and effect that wasn't hard to interpret.
+
+reflections on rhetoric: graphical lies
+---------------------------------------
+
+-   Describe the author's idea or ideas that you found most memorable.
+-   Discuss how you will apply the idea(s) to one of your designs
+
+**Reading:** How to display data badly (Wainer, 2000)
+
+**Response:** I think a lot of this goes into understanding your data well, and your motivations behind displaying the data. Choosing to emphasize and deemphasize specific elements can hide some details while misproportioning the importance of others.
+
+**Video:** [How charts lie](https://www.youtube.com/watch?v=Cd046xZhO_8&t=21m29s) by Alberto Cairo
+
+**Response:** The map data for violent crime in london was memorable to me because I've made this exact mistake in some of my previous work without realizing it. Of course it makes sense for crime to occur where theres more people. By actually normalizing the data with population, you can see where the real hotspots and areas of concern are. I think this lesson stuck out the most because at the time, I was really proud of the graphic I made, but this idea invalidates most of it.
