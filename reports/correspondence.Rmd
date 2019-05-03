@@ -4,6 +4,19 @@ output: github_document
 
 ## correspondence 
 
+### 2019-05-03
+
+**RL**  D5 presentation notes.  
+
+2017 2018 and 3 months of 2019 
+
+add a total bar chart of injuries and deaths under each map 
+
+book on R for jounalism from RAL 
+
+
+
+
 ### 2019-04-26
 
 **RL**  D4 presentation notes. 
