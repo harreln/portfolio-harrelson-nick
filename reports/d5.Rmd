@@ -1,0 +1,19 @@
+---
+title: "Display 5 - Redesign of a graphical lie"
+author: "Nick Harrelson"
+date: "May 3, 2019"
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
+bibliography: "../resources/references.bib"
+link_citations: yes
+csl: "../resources/journal-of-glaciology.csl"
+
+---
+
+
+```{r setup, echo=FALSE}
+library("knitr")
+include_graphics("../figures/d5.png")
+```
+

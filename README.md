@@ -4,7 +4,7 @@
 Portfolio of data displays
 ==========================
 
-Nick Harrelson 2019-04-26
+Nick Harrelson 2019-05-03
 
 Introduction
 ------------
@@ -27,6 +27,8 @@ This is a multiway plot investigating the effects of drought on Californian agri
 Investigating the ties between hapiness and GDP of nations using faceted scatter plots.
 
 [Display 4](reports/d4.md) Oral Cancer
+
+[Display 5](reports/d5.md) Graphical lie
 
 Discussion notes
 ----------------

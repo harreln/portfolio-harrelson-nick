@@ -36,6 +36,8 @@ Investigating the ties between hapiness and GDP of nations using faceted scatter
 
 [Display 4](reports/d4.md) Oral Cancer
 
+[Display 5](reports/d5.md) Graphical lie
+
 ## Discussion notes 
 
 [Reading responses](reports/reading-responses.md) Notes from the data graphics literature on elements of design and visual rhetoric. 
