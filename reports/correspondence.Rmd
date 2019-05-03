@@ -4,6 +4,28 @@ output: github_document
 
 ## correspondence 
 
+### 2019-04-26
+
+**RL**  D4 presentation notes. 
+
+2018 only? can you get data over more years? 
+
+20% above the women,  gray line, to compare to men 
+
+Use sex instead of gender as the legend name (gender has many levels, sex has basically two)  
+
+Image probably needs to change, but not sure how. Possibly an image or collection of images of things you can no longer do when you have oral cancer. 
+
+Image  should illustrate what you think the main point is. 
+
+Omit the legend and label the data mnarker directly. 
+
+
+
+
+
+
+
 ### 2019-04-19
 
 **RL**  D3 presentation notes. 
