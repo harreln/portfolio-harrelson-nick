@@ -16,7 +16,7 @@ ggparcoord(data = df,
   
 ggsave(filename = "d6.png",
        path = "figures",
-       width = 8,
-       height = 5,
+       width = 7,
+       height = 4,
        units = "in",
        dpi = 300)

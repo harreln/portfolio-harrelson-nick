@@ -16,3 +16,9 @@ library("knitr")
 include_graphics("../figures/d6.png")
 ```
 
+- matrix materials at bottom (but top of strain), makes sense because their purpose is to hold main materials together, not main load bearer
+     * most fibers are generally brittle in nature (at least in tension), the    strain from the matrix materials helps support form
+     * fibers are too small to secure by other methods, where they get their strength from
+- not a surprise, metals at top of density
+- benefits of fibers - higher strength, higher modulus, lower density
+- depending on whether or not application is strength critical or stiffness critical - look at spec strength or spec mod
