@@ -8,7 +8,7 @@ output:
 bibliography: "../resources/references.bib"
 link_citations: yes
 csl: "../resources/journal-of-glaciology.csl"
-
+---
 
 
 ```{r setup, echo=FALSE}
