@@ -1,0 +1,18 @@
+---
+title: "Display 6 "
+author: "Nick Harrelson"
+date: "May 10, 2019"
+output: 
+  github_document: 
+    pandoc_args: "--webtex"
+bibliography: "../resources/references.bib"
+link_citations: yes
+csl: "../resources/journal-of-glaciology.csl"
+
+
+
+```{r setup, echo=FALSE}
+library("knitr")
+include_graphics("../figures/d6.png")
+```
+

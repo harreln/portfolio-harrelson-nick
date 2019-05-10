@@ -38,6 +38,8 @@ Investigating the ties between hapiness and GDP of nations using faceted scatter
 
 [Display 5](reports/d5.md) Graphical lie
 
+[Display 6](reports/d6.md) Multivariate
+
 ## Discussion notes 
 
 [Reading responses](reports/reading-responses.md) Notes from the data graphics literature on elements of design and visual rhetoric. 

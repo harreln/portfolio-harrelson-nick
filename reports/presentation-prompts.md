@@ -163,6 +163,89 @@ Explain the visual-rhetoric features of the graph that make it unethical:
 
 Peer feedback:
 
+D5 redesign a graphical lie
+---------------------------
+
+**The original deceptive graph**
+
+The original image is included in the portfolio: Yes
+
+Explain the visual-rhetoric features of the graph that make it deceptive:
+
+-   data not available
+-   use of color (red)
+-   changing of colors
+-   showing select region not world
+-   excluding 2018, show whole context
+-   what does "territory" mean?
+
+Comments from peers
+
+-   Are there additional deceptive practices that have not been mentioned?
+-   Other comments
+-   etc
+
+**The redesigned graph**
+
+State the number of observations:
+
+Identify the variables:
+
+-   latitude
+-   longitude
+-   HarmLevel - calculated by HarmLevel = Deaths + 0.5\*Injuries
+
+State the graph type:
+
+Explain why the graph type is suited to the data structure:
+
+-   A map is preffered for spacial data like this, essentially one quantity per geolocation
+
+Explain each design choice and cite its supporting reference
+
+-   choice, reference
+-   choice, reference
+-   etc
+
+Comments from peers
+
+-sep death and injury, two legends maybe -frames for 2017, 2018, 2019 so far -total \# of injury/death at bottom bar chart -including boko haram helps world map -heres the lie -&gt; heres the fix -&gt; heres what it compares to (world map) \[in form of blog post for compelling story\] -compelling story -projection for map mollweise
+
+D6 multivariate
+---------------
+
+State the number of observations: 44
+
+List the variables:
+
+-   Material Type - nominal category with 5 levels
+-   Tensile Strength (MPa) - quantitative continuous variable
+-   Tensile Modulus (GPa) - quantitative continuous variable
+-   Density (g/cm3) - quantitative continuous variable
+-   Specific Strength - quantitative continuous variable
+-   Specific Modulus - quantitative continuous variable
+-   Ultimate Strain - quantitative continuous variable
+
+State the graph type: Parallel Coordinate
+
+Explain why the graph type is suited to the data structure:
+
+-   More than 4 quantitative variables, multivariate
+
+Explain each design choice and cite its supporting reference
+
+-   choice, reference
+-   choice, reference
+-   etc
+
+Comments from peers
+
+-   Does the data structure satisfy the portfolio display requirements?
+-   From the Doumont paper, what type of story is being told?
+-   Is the graph type suited to the data structure?
+-   Other suggestion
+-   etc
+
 Resources
 ---------
 

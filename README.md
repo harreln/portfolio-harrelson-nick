@@ -4,7 +4,7 @@
 Portfolio of data displays
 ==========================
 
-Nick Harrelson 2019-05-03
+Nick Harrelson 2019-05-10
 
 Introduction
 ------------
@@ -29,6 +29,8 @@ Investigating the ties between hapiness and GDP of nations using faceted scatter
 [Display 4](reports/d4.md) Oral Cancer
 
 [Display 5](reports/d5.md) Graphical lie
+
+[Display 6](reports/d6.md) Multivariate
 
 Discussion notes
 ----------------
