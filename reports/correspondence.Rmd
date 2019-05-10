@@ -4,6 +4,41 @@ output: github_document
 
 ## correspondence 
 
+
+
+### 2019-05-17
+
+**RL**  D7 presentation notes. 
+
+
+
+
+
+
+### 2019-05-10
+
+**RL**  D6 presentation notes. 
+
+Composite material properties 
+
+Rotate the x-axis labels to make more readable or swap the axes 
+
+I think the order of the properties needs rearranging 
+
+Use an alpha on the line colors for some transparency 
+
+Critique should include a discussion of how a user wold use this information to select a material, with specific example and application. 
+
+How do the carbon fibers vary? You may not want to group them 
+
+Factor for the materials ordered by one of the obvious variables using a diverging color scheme assigned in the order you select. 
+
+
+
+
+
+
+
 ### 2019-05-03
 
 **RL**  D5 presentation notes.  
@@ -12,7 +47,7 @@ output: github_document
 
 add a total bar chart of injuries and deaths under each map 
 
-book on R for jounalism from RAL 
+book on R for journalism from RAL 
 
 
 
@@ -31,7 +66,7 @@ Image probably needs to change, but not sure how. Possibly an image or collectio
 
 Image  should illustrate what you think the main point is. 
 
-Omit the legend and label the data mnarker directly. 
+Omit the legend and label the data marker directly. 
 
 
 
@@ -74,7 +109,7 @@ Make the quantitative variable percent of market, or "market share"
 
 Perhaps ignoring years and instead have two categories: drought and crop, then the quantitative variable is the percent of market for that crop in that drought condition. 
 
-This entails computing the total annual market value of all crops that year then for a given crop and drought condition, summing the crop value, summing the all-crop values over those years with that droughtcondition, then dividing for a percentage. 
+This entails computing the total annual market value of all crops that year then for a given crop and drought condition, summing the crop value, summing the all-crop values over those years with that drought condition, then dividing for a percentage. 
 
 
 
