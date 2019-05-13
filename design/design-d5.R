@@ -16,6 +16,8 @@ attacks_world <- readRDS("data/data-d5bigger.rds") %>%
   glimpse()
 
 levels(attacks$yearcol) <- c("2017", "2018", "2019 (up to May 1)")
+levels(attacks_world$yearcol) <- c("2017", "2018", "2019 (up to May 1)")
+
 
 #Set your API Key
 #ggmap::register_google(key = "AIzaSyCOJEHgC1vT_27i2ZS1Bk0vLnihkvk42eA")
@@ -33,13 +35,13 @@ p + geom_point(aes(x = lon, y = lat,  size = HarmLevel), data = attacks, alpha =
   theme(legend.position="none") +
   facet_wrap(vars(yearcol)) +
   labs(title = "Attacks claimed by the Islamic State, 2017-2019",
-       subtitle = "Point size is proportional to the number of deaths and injuries in each attack",
+       subtitle = "Point size is proportional to the number of deaths and injuries in each attack\n",
        caption = "Source: Wikipedia, List of terrorist incidents") 
 
 ggsave(filename = "d5-middle_east.png",
        path = "figures",
        width = 8,
-       height = 5,
+       height = 4,
        units = "in",
        dpi = 300)
 
@@ -66,7 +68,7 @@ p_world_add <- p_world + geom_point(aes(x = lon, y = lat,  size = HarmLevel, col
 ggsave(filename = "d5-world.png",
        path = "figures",
        width = 8,
-       height = 3,
+       height = 4,
        units = "in",
        dpi = 300)
 
@@ -133,11 +135,11 @@ first <- image_read("figures/d5-2017.png")
 second <- image_read("figures/d5-2018.png")
 third <- image_read("figures/d5-2019.png")
 
-source_note <- image_crop(world, "2400x100+0+850")
-world <- image_crop(world, "2400x850")
+source_note <- image_crop(world, "2400x180+0+1020")
+world_crop <- image_crop(world, "2400x1020")
 
 bottom <- image_append(c(first, second, third), stack = FALSE)
-final <- image_append(c(world, bottom, source_note), stack = TRUE)
+final <- image_append(c(world_crop, bottom, source_note), stack = TRUE)
 final <- image_border(final, "#ffffff", "15x15")
 
 image_write(final, 
