@@ -4,7 +4,9 @@ library(dplyr)
 library(data.table)
 library(ggrepel)
 library(tidyverse)
+library(magick)
 library("ggmap")
+library(graphclassmate)
 
 attacks <- readRDS("data/data-d5bigger.rds") %>%  
   filter(Perpetrator == "Islamic State") %>%
@@ -55,15 +57,16 @@ p_world_add <- p_world + geom_point(aes(x = lon, y = lat,  size = HarmLevel, col
   theme_void() +
   facet_wrap(vars(yearcol)) +
   guides(size = "none", color = "none") +
+  scale_color_manual(values=c(rcb("dark_Br"),rcb("dark_Gn"))) +
   labs(title = "Attacks claimed by the Islamic State and Boko Haram, 2017-2019",
-       subtitle = "Point size is proportional to the number of deaths and injuries in each attack.\nISIS in blue, Boko Haram in brown.",
+       subtitle = "Point size is proportional to the number of deaths and injuries in each attack.\nISIS in green, Boko Haram in brown.\n",
        caption = "Source: Wikipedia, List of terrorist incidents")
   
 
 ggsave(filename = "d5-world.png",
        path = "figures",
        width = 8,
-       height = 5,
+       height = 3,
        units = "in",
        dpi = 300)
 
@@ -85,7 +88,7 @@ b2017 <- ggplot(data=bar_data[c(1,4),1:3], aes(x=variable, y=value)) +
 ggsave(filename = "d5-2017.png",
        path = "figures",
        width = 8/3,
-       height = 3,
+       height = 1.8,
        units = "in",
        dpi = 300)
 
@@ -96,16 +99,16 @@ b2018 <- ggplot(data=bar_data[c(2,5),1:3], aes(x=variable, y=value)) +
 ggsave(filename = "d5-2018.png",
        path = "figures",
        width = 8/3,
-       height = 3,
+       height = 1.8,
        units = "in",
        dpi = 300)
 
 #2019
 append2019 <- bar_data[c(3,6),1:3]
 append2019 <-  do.call(rbind, list(Total = append2019, Projected = append2019))
-append2019 <- add_column(append2019, type = c("Total as of May 1, 2019","Total as of May 1, 2019","Projected total for all of 2019","Projected total for all of 2019"))
-append2019[3,3] = append2019[3,3]*3
-append2019[4,3] = append2019[4,3]*3
+append2019 <- add_column(append2019, type = c("Total as of May 1","Total as of May 1","2019 Total Projection","2019 Total Projection"))
+append2019[3,3] = append2019[3,3]*2 #multiply x2 not x3 so that the stacking adds up correctly
+append2019[4,3] = append2019[4,3]*2
 
 b2019 <- ggplot(data = append2019, aes(x = variable, y = value, fill = type)) + 
   geom_bar(stat="identity") + 
@@ -114,12 +117,30 @@ b2019 <- ggplot(data = append2019, aes(x = variable, y = value, fill = type)) +
   ylim(0,6500) +
   theme_minimal() +
   scale_fill_manual(values=c("#848484", "#cecece")) + 
-  geom_text(aes(x = variable, y = value-200, label = type))
+  geom_text(aes(x = variable, y = value-200, label = type), size = 2)
 
-ggsave(filename = "d5-201+9.png",
+ggsave(filename = "d5-2019.png",
        path = "figures",
        width = 8/3,
-       height = 3,
+       height = 1.8,
        units = "in",
        dpi = 300)
+
+#Image Magick everything together
+
+world <- image_read("figures/d5-world.png")
+first <- image_read("figures/d5-2017.png")
+second <- image_read("figures/d5-2018.png")
+third <- image_read("figures/d5-2019.png")
+
+source_note <- image_crop(world, "2400x100+0+850")
+world <- image_crop(world, "2400x850")
+
+bottom <- image_append(c(first, second, third), stack = FALSE)
+final <- image_append(c(world, bottom, source_note), stack = TRUE)
+final <- image_border(final, "#ffffff", "15x15")
+
+image_write(final, 
+            path = "figures/d5.png", 
+            format = "png")
 
