@@ -195,3 +195,77 @@ illustrations. *Technical Communication* 48(3): 265--274.
 **Video:** [How charts lie](https://www.youtube.com/watch?v=Cd046xZhO_8&t=21m29s) by Alberto Cairo    
 
 **Response:** The map data for violent crime in london was memorable to me because I've made this exact mistake in some of my previous work without realizing it. Of course it makes sense for crime to occur where theres more people. By actually normalizing the data with population, you can see where the real hotspots and areas of concern are. I think this lesson stuck out the most because at the time, I was really proud of the graphic I made, but this idea invalidates most of it.  
+
+## week 8 reading prompts  
+
+Kostelnick, Charles (2007) The visual rhetoric of data displays: The conundrum
+of clarity. *IEEE Transactions on Professional Communication* 50(2): 280--294.
+
+* what are some of the facets of the conundrum of clarity?
+
+Different discourse communities
+Rhetoric of science, rhetoric of adaptation, rhetoric of participation, social rhetoric
+
+* Who is looking at the information matters (interpretation may change based on specific discourse community)
+
+* Participation - reader gets to decide what they are looking at
+* Adaptation - what does that person perceive, who is the audience, meeting req of situation
+* social - all the baggage a reader brings to their interpretation 
+  what is normal to you isnt normal to the planet, people are aculturated in different ways without knowing it.
+  
+  recognizing other people are trained in other discourse communities
+  rules of discoure are not universal (platonic ideal) 
+  
+  assignment: pick out any piece of what we talked about and write a summary ove things that stand out to you. 
+  key idea you take away from this that will affect one of your designs
+
+
+## week 10 reading prompts  
+
+Spence, Ian (2006) William Playfair and the psychology of graphs. In: *IEEE
+Transactions on Professional Communication.* Alexandria, VA: American
+Statistical Association, section on statistical graphics, 2426--2436.
+
+**Prompt:** Explain what the author means by the "psychology of graphs." 
+
+**Response:** The designer of the graph can utilize different aspects of human 
+psychology to aid the design. Specifically how we process information by 
+reducing demands on attention, working memory, and long-term memory.
+
+
+
+**Prompt:**  Psychology was identified as its own science in the 1730s and 
+experimental psychology research began in the 1830s. Thus William Playfair's 
+life (1759--1823) overlapped the beginnings of psychology as a science. But 
+he was not a psychologist---he was a craftsman by trade who was exposed to the 
+best minds of the Scottish Enlightenment. His experience included engineering, 
+commerce, and publishing (as well as dubious investment schemes and attempted 
+extortion). Nevertheless, the author makes connections between Playfair and 
+psychology. 
+
+Describe those connections.  
+
+**Response:**  
+A lot of his early influencers were simply laying the groundwork to psychology. Dugald Stewart 
+and Thomas Reid helped form his ideas on perception and memory. His older brother John made the connetion 
+between these ideas and actually plotting numbers. A lot of his other skills come from more practical 
+avenues.
+
+
+**Prompt:** In section 2.3, the author describes 5 examples of graphical 
+conventions that Playfair invented or adapted. Discuss your interpretation of 
+each convention in light of our other readings and discussions this term. 
+
+**Response:** 
+
+* Use of color 
+    + Playfair used colors to denote categories, even in a time where it added significant printing cost. 
+* Slope
+    + Very easy to visually interpret right away. "which one slopes more" is immediately thought of, these are the "visual queries" discussed earlier
+* Length to code a quantity
+    + I think its interesting that Playfair found bar graphs inferior due to their lack of a time series. I think they can be much more effective than a time series in certain cases, odd to think about how these graphs were new at the time and this jump in thinking was not exactly natural. 
+* Areas to code a quantity
+    + This is the least effective in my opinion, as discussed before: are we coding the quantity in area? in diameter? The dimension of interest is not as natural to choose.
+    + I wonder what the vertical lines leaving the pie charts are, in figure 18.
+* Map makers
+    + He adopted many of the conventions from map making rather than mathematics, as the field had already begun focusing on making the maps easy to comprehend and read. 
