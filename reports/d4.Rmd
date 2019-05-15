@@ -31,3 +31,11 @@ Data structure:
 library("knitr")
 include_graphics("../figures/d4.png")
 ```
+
+
+time span - 208 only? or othe ryears 
+"+" for last age group
+feint 20% line for women to show instances
+smiling on picture 
+realte pic to men rate (main point)
+pic - debilitating aspects of oral cancer list

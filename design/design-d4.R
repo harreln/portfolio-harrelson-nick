@@ -1,58 +1,69 @@
 library(ggplot2)
 library("graphclassmate")
 library(magick)
+library(grid)
 
-df <- readRDS("data/data-d4.rds") %>%  
+df_orig <- readRDS("data/data-d4.rds") %>%  
   glimpse()
 
-p <- ggplot(df, aes(x = Age, y = Rate)) +
-  geom_point() +
-  facet_wrap(vars(Race), as.table = FALSE, nrow = 1) +
-  labs(y = "", x = "Age Group", 
-       title = "New incidences of oral cancer per 100,000 people\n", 
-       caption = "Source: National Institute of Dental and Craniofacial Research, 2018") +
-  theme_graphclass(line_color = rcb("mid_Gray"), 
-                   font_size = 11) + 
-  theme(axis.text.x = element_text(angle = 45, hjust = 1),
-        axis.line = element_line(colour = rcb("pale_Gray")), 
-        strip.text = element_text(color = rcb("dark_Gray"), face = "bold"), 
-        plot.margin = unit(c(2, 4, 1, 0), "mm"), # top, right, bottom, and left margins
-        panel.border = element_rect(color = rcb("pale_Gray"), fill = NA), 
-        panel.spacing = unit(3, "mm"), 
-        plot.background = element_rect(color = NA, fill = rcb("pale_Gray")), 
-        panel.background = element_rect(color = NA, fill = rcb("pale_Gray")), 
-        panel.grid.minor = element_blank(), 
-        strip.background = element_rect(color = rcb("pale_Gray"), fill = rcb("pale_Gray"))) +
-  aes(fill = Gender) +
-  geom_point(size = 2.5, shape = 21, color = "black") +
+df_fix <- filter(df_orig, Sex == "FemaleFixed")
+df <- filter(df_orig, Sex != "FemaleFixed")
+
+p <- ggplot() +
+  geom_line(data = df_fix, aes(x=Age, y=Rate, group=1), color = rcb("dark_Gray")) +
+  geom_point(data = df_fix, 
+             mapping = aes(x = Age, y = Rate), 
+             size = 3, 
+             color = "#F9F9F9") +
+  geom_point(data = df_fix, 
+             mapping = aes(x = Age, y = Rate), 
+             size = 1, 
+             color = rcb("dark_Gray"),
+             shape = 3) +
+  geom_point(data = df, aes(x=Age, y=Rate, fill=Sex), size = 2.5, shape = 21, color = "black") +
+  facet_wrap(vars(Race), as.table = FALSE, nrow=1) +
   scale_fill_manual(values = c(rcb("pale_Gray"),"black"))
 
+p <- p + 
+  theme_graphclass(line_color = rcb("mid_Gray"), font_size = 11) + 
+  theme(axis.line = element_line(color = "#F9F9F9"), 
+        strip.text = element_text(color = rcb("dark_Gray"), face = "bold"), 
+        plot.margin = unit(c(2, 4, 1, 0), "mm"), # top, right, bottom, and left margins
+        panel.border = element_rect(color = "#F9F9F9", fill = NA), 
+        panel.spacing = unit(3, "mm"), 
+        plot.background = element_rect(color = NA, fill = "#F9F9F9"), 
+        panel.background = element_rect(color = NA, fill = "#F9F9F9"), 
+        panel.grid.minor = element_blank(), 
+        strip.background = element_rect(color = "#F9F9F9", fill = "#F9F9F9"),
+        legend.position = "none") +
+  labs(y = "", x = "Upper Limit of Age Group", 
+       title = "New incidences of oral cancer per 100,000 people\n", 
+       caption = "Source: National Institute of Dental and Craniofacial Research, 2018")
 
 ggsave(plot = p, 
        filename = "d4-plot.png",
        path    = "figures",
        width   = 8,
-       height  = 3,
+       height  = 4,
        units   = "in",
        dpi     = "retina")
 
+# read graph and annotate sex 
+the_graph <- image_read("figures/d4-plot.png") %>%
+  image_annotate("Male", size = 40, color = rcb("dark_Gray"), boxcolor = "#F9F9F9", location = "+685+510") %>%
+  image_annotate("Female", size = 40, color = rcb("dark_Gray"), boxcolor = "#F9F9F9", location = "+685+750") %>%
+  image_annotate("Female, adjusted\nfor smoking rates", size = 40, color = rcb("dark_Gray"), boxcolor = "#F9F9F9", location = "+685+635")
+
+
 # read images
-the_graph <- image_read("figures/d4-plot.png")
-advert <- image_read("resources/man-cig.jpg")
+photo <- image_read("resources/throat-cancer.jpg") %>%
+ # image_quantize(max = 10, colorspace = "gray") %>%
+  image_border("#F9F9F9", "15x15") %>%
+  image_crop("800x766+180+0")
 
-#create grey image with colored headline
-top <- image_crop(advert, "853x760")
-middle <- image_crop(advert, "853x65+0+760")
-bottom <- image_crop(advert, "853x355+0+825")
-
-top <- image_quantize(top, max = 10, colorspace = "gray")
-bottom <- image_quantize(bottom, max = 10, colorspace = "gray")
-
-ad <- image_append(c(top, middle, bottom), stack = TRUE)
-ad <- image_border(ad, rcb("pale_Gray"), "15x15")
 
 # scale the heights to match 
-ad    <- image_scale(ad, "x500")
+photo <- image_scale(photo, "x500")
 the_graph <- image_scale(the_graph, "x500")
 
 # append to the graph image 
@@ -63,37 +74,23 @@ the_graph <- image_scale(the_graph, "x500")
 width  <- image_info(the_graph)[["width"]]
 
 # select a height (pixels) by trial and error
-height <- 60
+height <- 120
 
 # create the box 
-text_box <- image_blank(width = width, height = height, color = rcb("pale_Gray"))
-
-# add the headline text to the box 
-text_box <- image_annotate(text_box, 
-                           text     = "But a Healthy Mouth tastes Best.", 
-                           gravity  = "west", 
-                           location = "+10+0", 
-                           size     = 40, 
-                           color    = "#B8334B", 
-                           font     = "Georgia")
-
-# create the box 
-sub_box <- image_blank(width = width, height = height, color = rcb("pale_Gray"))
-
-# add the headline text to the box 
-sub_box <- image_annotate(sub_box, 
-                           text     = "Despite only smoking approximately 20% more (Nat. Inst. on Drug Abuse), men develop oral cancer at twice the rate\n of women. Avoiding tobacco products and living a healthy lifestlye is the only method of prevention.", 
-                           gravity  = "west", 
-                           location = "+10+0", 
-                           size     = 25, 
-                           color    = "#B8334B", 
-                           font     = "Georgia")
-
+text_box <- image_blank(width = width, height = height, color = "#F9F9F9")
 
 # join the headline to the image 
-final_img <- image_append(c(text_box, sub_box, the_graph), stack = TRUE)
-# join the ad to the rest
-final_img <- image_append(c(ad, final_img), stack = FALSE)
+final_img <- image_append(c(text_box, the_graph), stack = TRUE)
+
+final_img <- image_scale(final_img, "x500")
+
+final_img <- image_append(c(final_img, photo), stack = FALSE) %>%
+  image_annotate(text     = "Despite only smoking approimately 20% more (Nat. Inst. on Drug Abuse), men develop oral\ncancer at twice the rate of women. Avoiding tobacco products and living a healthy lifestyle is\nthe only method of prevention", 
+                 gravity  = "west", 
+                 location = "+10-200", 
+                 size     = 25, 
+                 color    = "#872121", 
+                 font     = "Georgia")
 
 
 # and write to file

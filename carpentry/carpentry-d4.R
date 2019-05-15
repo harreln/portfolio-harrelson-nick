@@ -42,9 +42,23 @@ df2 <- df2[!(df2$Age == "All"),]
 df2 <- df2 %>% 
   mutate(Race = factor(Race)) %>%
   mutate(Gender = factor(Gender)) %>%
-  mutate(Age = factor(Age)) %>%
+  mutate(Age = ordered(Age)) %>%
   mutate(Race = fct_reorder(Race, Rate)) %>%
   mutate(Race = fct_recode(Race, Asian = "Asian or Pacific Islander"))
 
+#add third category to account for different smoking rates
+fem_fix <- df2 %>% 
+  filter(Gender == "Female") %>%
+  mutate(Rate = Rate * 1.228)
+
+fem_fix$Gender <- "FemaleFixed"
+
+#append this to original df
+
+df2 <- rbind(df2, fem_fix)
+
+colnames(df2)[colnames(df2)=="Gender"] <- "Sex"
+
+levels(df2$Age) <- ordered(c("19","29","39","49","59", "69","79","+"))
 
 saveRDS(df2, "data/data-d4.rds")
