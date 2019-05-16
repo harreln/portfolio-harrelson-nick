@@ -93,7 +93,19 @@ df$drought[df$year == "2015"] <- "Exceptional"
 df$drought[df$year == "2016"] <- "Exceptional"
 df$drought[df$year == "2017"] <- "Abnormally Dry"
 
-df$drought <- factor(df$drought, levels = c("None","Abnormally Dry","Moderate","Severe","Extreme","Exceptional"))
+df$drought <- factor(df$drought, levels = rev(c("None","Abnormally Dry","Moderate","Severe","Extreme","Exceptional")))
+
+#Refactoring data for new plot
+
+df_total <- as_tibble(aggregate(df$value, by=list(drought=df$drought), FUN=sum)) %>%
+  rename(drought_total = x)
+
+df_cond <- as_tibble(aggregate(df$value, by=list(drought=df$drought, commodity=df$commodity), FUN=sum))
+
+refact_df <- left_join(df_cond,df_total) %>%
+  mutate(percent = x/drought_total)# %>%
+#  mutate(commodity = forcats::fct_reorder(
+#    commodity, filter(., drought == "None") %>% pull(percent)))
 
 # save data
-saveRDS(df, "data/ca-commodities-d2.rds")
+saveRDS(refact_df, "data/d2.rds")
