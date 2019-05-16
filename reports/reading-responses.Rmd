@@ -266,6 +266,7 @@ each convention in light of our other readings and discussions this term.
     + I think its interesting that Playfair found bar graphs inferior due to their lack of a time series. I think they can be much more effective than a time series in certain cases, odd to think about how these graphs were new at the time and this jump in thinking was not exactly natural. 
 * Areas to code a quantity
     + This is the least effective in my opinion, as discussed before: are we coding the quantity in area? in diameter? The dimension of interest is not as natural to choose.
+    Actually done by area, which is correct
     + I wonder what the vertical lines leaving the pie charts are, in figure 18.
 * Map makers
     + He adopted many of the conventions from map making rather than mathematics, as the field had already begun focusing on making the maps easy to comprehend and read. 
