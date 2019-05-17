@@ -10,7 +10,9 @@ output: github_document
 
 **RL**  D7 presentation notes. 
 
+Find the missing countries
 
+GDP per capita? 
 
 
 
