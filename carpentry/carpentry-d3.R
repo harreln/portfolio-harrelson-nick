@@ -3,53 +3,42 @@ library(readr)
 library(tidyr)
 library(forcats)
 
-#load individual happiness reports
-happy1 <- read_csv("data-raw/2015whr.csv")
-happy1 <- happy1[c("Country","Happiness Score","Region")]
-happy2 <- read_csv("data-raw/2016whr.csv")
-happy2 <- happy2[c("Country","Happiness Score","Region")]
-happy3 <- read_csv("data-raw/2017whr.csv")
-happy3 <- happy3[c("Country","Happiness.Score")] %>% left_join(happy2[c("Country","Region")])
+alt_alum6061 <- read_tsv("data-raw/alt-alum.csv")
+mean_alum6061 <- read_tsv("data-raw/mean-alum.csv")
+alt_alum2024 <- read_tsv("data-raw/alt-alum2024.csv")
+mean_alum2024 <- read_tsv("data-raw/mean-alum2024.csv")
+alt_steel <- read_tsv("data-raw/alt-steel.csv")
+mean_steel <- read_tsv("data-raw/mean-steel.csv")
+alt_poly <- read_tsv("data-raw/alt-poly.csv")
+mean_poly <- read_tsv("data-raw/mean-poly.csv")
+alt_delrin <- read_tsv("data-raw/alt-delrin.csv")
+mean_delrin <- read_tsv("data-raw/mean-delrin.csv")
 
-#add year to reports
-happy1$Year <- '2015'
-happy2$Year <- '2016'
-happy3$Year <- '2017'
+df1 <- data.frame(alternating = alt_alum6061$`Maximum Principal Stress (Pa)`, mean = mean_alum6061$`Maximum Principal Stress (Pa)`, material = "Aluminum 6061-T6") %>%
+  mutate(x = mean/(310*(10^6))) %>%
+  mutate(y = alternating/(96.5*(10^6)))
+df2 <- data.frame(alternating = alt_alum2024$`Maximum Principal Stress (Pa)`, mean = mean_alum2024$`Maximum Principal Stress (Pa)`, material = "Aluminum 2024") %>%
+  mutate(x = mean/(469*(10^6))) %>%
+  mutate(y = alternating/(138*(10^6)))
+df3 <- data.frame(alternating = alt_steel$`Maximum Principal Stress (Pa)`, mean = mean_steel$`Maximum Principal Stress (Pa)`, material = "1144 Steel") %>%
+  mutate(x = mean/(620*(10^6))) %>%
+  mutate(y = alternating/(350*(10^6)))
+df4 <- data.frame(alternating = alt_poly$`Maximum Principal Stress (Pa)`, mean = mean_poly$`Maximum Principal Stress (Pa)`, material = "Polycarbonate") %>%
+  mutate(x = mean/(65*(10^6))) %>%
+  mutate(y = alternating/(13.8*(10^6)))
+df5 <- data.frame(alternating = alt_delrin$`Maximum Principal Stress (Pa)`, mean = mean_delrin$`Maximum Principal Stress (Pa)`, material = "Delrin") %>%
+  mutate(x = mean/(69*(10^6))) %>%
+  mutate(y = alternating/(32*(10^6)))
 
-#fix column name
-colnames(happy3)[colnames(happy3)=="Happiness.Score"] <- "HappinessScore"
-colnames(happy2)[colnames(happy2)=="Happiness Score"] <- "HappinessScore"
-colnames(happy1)[colnames(happy1)=="Happiness Score"] <- "HappinessScore"
+df <- rbind(df1,df2) %>%
+  rbind(df3) %>%
+  rbind(df4) %>%
+  rbind(df5)
 
-#combine happiness dfs
-happy <- rbind(happy1,happy2) %>% rbind(happy3)
-
-#load and fix GDP df
-gdp <- read_csv("data-raw/gdp_data.csv")
-gdp <- gdp[c("Country Name", "2015","2016","2017")] %>%
-  gather(`2015`, `2016`, `2017`, key = "Year", value = "GDP") %>%
-  mutate(GDP = GDP/(10^9))
-colnames(gdp)[colnames(gdp)=="Country Name"] <- "Country"
-
-#join together
-df <- inner_join(happy,gdp)
-
-#add population data
-pop <- read_csv("data-raw/population.csv") %>%
-  filter(Year == 2015)
-pop <- pop[c("Country Name", "Value")]
-colnames(pop)[colnames(pop)=="Country Name"] <- "Country"
-colnames(pop)[colnames(pop)=="Value"] <- "Population"
-
-df <- left_join(df,pop)
-  
-df <- df %>% mutate(Region = factor(Region)) %>%
-  mutate(Region = fct_reorder(Region, HappinessScore)) %>%
-  mutate(Population = Population/(10^6))
-
-df <- df[complete.cases(df),]
-df <- df[!(df$Region=="Australia and New Zealand"),] %>% 
-  mutate(Region = fct_recode(Region, "Middle East and North Africa" = "Middle East and Northern Africa"))
+df$material <- fct_reorder2(df$material, df$x, df$y)
 
 #save data
 saveRDS(df, "data/data-d3.rds")
+# 
+# x_axis = mean_stress/ult_tensile;
+# y_axis = alt_stress/fatigue_str;
