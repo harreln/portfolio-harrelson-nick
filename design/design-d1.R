@@ -7,23 +7,14 @@ library("tidyverse")
 df <- readRDS("data/wine-data-d1.rds") %>% 
   glimpse()
 
-outlier_only <- df %>%
-  group_by(continent, quality) %>%
-  mutate(outlier = price > summary(price)[5] + 1.50*(summary(price)[5]-summary(price)[2])) %>%
-  ungroup() %>% 
-  filter(outlier == TRUE)
-
-p <- ggplot(df, aes(x = continent, y = price, fill = quality)) +
-  geom_boxplot(width = 0.5, alpha = 0.75, outlier.shape = NA) +
+p <- ggplot(df, aes(y = price, x = quality, fill = quality)) +
+  geom_boxplot() +
   coord_flip() +
+  facet_wrap(vars(df$continent)) +
   scale_y_continuous(breaks = seq(0, 120, by = 10),limits = c(0,120)) +
   labs(y = "Bottle Price (USD)", x = "") +
   theme_graphclass() +
-  scale_fill_manual(values = c(rcb("light_Gn"), rcb("light_PR")), labels = c("Bad Wine", "Good Wine")) +
-  aes(color = quality) +
-  scale_color_manual(values = c(rcb("dark_Gn"), rcb("dark_PR"))) +
-  guides(fill  = guide_legend(title = NULL), color = "none") +
-  theme(legend.position="top")
+  theme(legend.position = "none") 
 
 p
 
