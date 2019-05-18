@@ -26,11 +26,21 @@ This is a multiway plot investigating the effects of drought on Californian agri
 
 Technical data aiding the material selection for a component.
 
-[Display 4](reports/d4.md) Oral Cancer
+[Display 4](reports/d4.md) Injuries/Fatalities - Oral Cancer
 
-[Display 5](reports/d5.md) Graphical lie
+Comparing rates of incidence of oral cancer between ages, sexes, and races.
+
+[Display 5](reports/d5.md) Redesign of a Graphical Lie
+
+A response to a map presented by President Trump regarding the ISIS caliphate.
 
 [Display 6](reports/d6.md) Multivariate
+
+Something new
+
+[Display 7](reports/d7.md) Happiness Micromap
+
+Linked micromap relating the happiness of countries, GDP per capita, and geographical location.
 
 Discussion notes
 ----------------
