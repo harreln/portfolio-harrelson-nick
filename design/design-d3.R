@@ -1,5 +1,6 @@
 library(ggplot2)
 library("graphclassmate")
+library(dplyr)
 
 Sys.time()
 
@@ -23,7 +24,8 @@ p <- ggplot() +
         panel.grid.major = element_blank(), 
         panel.grid.minor = element_blank(),
         panel.background = element_blank(), 
-        axis.line = element_line(colour = "black"))
+        axis.line = element_line(colour = "black")) +
+  coord_fixed()
 
 
 p

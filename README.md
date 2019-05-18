@@ -4,7 +4,7 @@
 Portfolio of data displays
 ==========================
 
-Nick Harrelson 2019-05-10
+Nick Harrelson 2019-05-18
 
 Introduction
 ------------
@@ -16,15 +16,15 @@ Displays and critiques
 
 [Display 1](reports/d1.md) Wine Reviews
 
-This is a boxplot made to assist novice wine drinkers with purchasing quality wine based on continent and price.
+This is a box plot made to assist novice wine drinkers with purchasing quality wine based on continent and price.
 
 [Display 2](reports/d2.md) California Agricultural Commodities
 
 This is a multiway plot investigating the effects of drought on Californian agricultural markets.
 
-[Display 3](reports/d3.md) Does money buy happiness?
+[Display 3](reports/d3.md) Goodman Diagrams
 
-Investigating the ties between hapiness and GDP of nations using faceted scatter plots.
+Technical data aiding the material selection for a component.
 
 [Display 4](reports/d4.md) Oral Cancer
 
