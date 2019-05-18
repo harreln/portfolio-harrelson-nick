@@ -20,7 +20,7 @@ levels(attacks_world$yearcol) <- c("2017", "2018", "2019 (up to May 1)")
 
 
 #Set your API Key
-#ggmap::register_google(key = "AIzaSyCOJEHgC1vT_27i2ZS1Bk0vLnihkvk42eA")
+ggmap::register_google(key = "AIzaSyCOJEHgC1vT_27i2ZS1Bk0vLnihkvk42eA")
 
 # First Plot, middle east only
 p <- ggmap(get_googlemap(center = c(lon = 41, lat = 34),
@@ -59,9 +59,9 @@ p_world_add <- p_world + geom_point(aes(x = lon, y = lat,  size = HarmLevel, col
   theme_void() +
   facet_wrap(vars(yearcol)) +
   guides(size = "none", color = "none") +
-  scale_color_manual(values=c(rcb("dark_Br"),rcb("dark_Gn"))) +
+  scale_color_manual(values=c("#003f5c", rcb("dark_Gn"))) +
   labs(title = "Attacks claimed by the Islamic State and Boko Haram, 2017-2019",
-       subtitle = "Point size is proportional to the number of deaths and injuries in each attack.\nISIS in green, Boko Haram in brown.\n",
+       subtitle = "Point size is proportional to the number of deaths and injuries in each attack.\nISIS in green, Boko Haram in blue.\n",
        caption = "Source: Wikipedia, List of terrorist incidents")
   
 
