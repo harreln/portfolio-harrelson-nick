@@ -93,7 +93,7 @@ df$drought[df$year == "2015"] <- "Exceptional"
 df$drought[df$year == "2016"] <- "Exceptional"
 df$drought[df$year == "2017"] <- "Abnormally Dry"
 
-df$drought <- factor(df$drought, levels = rev(c("None","Abnormally Dry","Moderate","Severe","Extreme","Exceptional")))
+df$drought <- factor(df$drought, levels = (c("None","Abnormally Dry","Moderate","Severe","Extreme","Exceptional")))
 
 #Refactoring data for new plot
 
