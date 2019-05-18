@@ -4,6 +4,8 @@
 
 library(dplyr)
 library(countrycode)
+library(forcats)
+library(tidyverse)
 
 wine <- read_csv("data-raw/winemag-data_first150k.csv")
 
@@ -33,9 +35,10 @@ wine$quality <- ifelse(wine$points <= 86,"Acceptable/Good", ifelse(wine$points <
 
 #keep final columns of interest 
 wine <- wine %>%
-  mutate(quality = factor(quality, levels = c("Acceptable/Good","Very Good/Excellent","Superb/Classic"))) %>%
-  mutate(continent = factor(continent)) %>%
-  mutate(continent = fct_reorder(continent, price)) %>%
-  filter(continent %in% c("Africa","Asia","Europe","North America","Oceania","South America"))
+  mutate(quality = factor(quality, levels = c("Acceptable/Good","Very Good/Excellent","Superb/Classic"))) 
+
+wine$continent <- factor(wine$continent, levels = c("South America","Africa","Oceania","Asia","North America","Europe")) 
+
+wine <- na.omit(wine)
 
 saveRDS(wine, "data/wine-data-d1.rds")
