@@ -2,6 +2,8 @@ library(ggplot2)
 library(dplyr)
 library(rworldmap)
 library(micromap)
+library(graphclassmate)
+library(magick)
 
 world <- getMap(resolution = "low")
 
@@ -13,7 +15,7 @@ head(worldPolys)
 p <- mmplot(stat.data = data,
        map.data = worldPolys,
        panel.types = c('labels','dot','dot','map'),
-       panel.data = list('Country','Happiness','GDP',NA),
+       panel.data = list('Country','Happiness','GDPperCapita',NA),
        ord.by = 'Happiness', rev.ord = T,
        grouping = 10, median.row = F,
        map.link = c('Country','ID'),
@@ -24,12 +26,20 @@ p <- mmplot(stat.data = data,
                 list(2, header="Happiness\nIndex",
                        graph.bgcolor="lightgray", point.size=1.5,
                        xaxis.title="Score (0-10)", panel.width = 2),
-                list(3, header="Gross Domestic\nProduct",
+                list(3, header="Gross Domestic Product\nPer Capita",
                        graph.bgcolor="lightgray", point.size=1.5,
                     #   xaxis.ticks=list(20,30,40), xaxis.labels=list(20,30,40),
-                       xaxis.title="log(Billions USD)", panel.width = 2),
+                       xaxis.title="USD Billions", panel.width = 2),
                 list(4, header="Light Gray Means\nHighlighted Above",
                        inactive.fill="lightgray",
                        inactive.border.color=gray(.7), inactive.border.size=0.2,
                        panel.width=4)),
        plot.height = 22, plot.width = 10)
+
+
+the_graph <- image_read("figures/d7.png") %>%
+  image_annotate("Source: United Nations World Happiness Report, 2017", size = 40, color = rcb("dark_Gray"), location = "+2000+6500")
+
+image_write(the_graph, 
+            path = "figures/d7.png", 
+            format = "png")

@@ -271,5 +271,38 @@ Comments from peers
 - Other suggestion 
 - etc
 
+## D7 self-taught  
+
+State the number of observations:  
+
+List the variables: 
+
+- Happiness Index 
+    + Continuous quantitative
+- GDP 
+    + Continuous quantitative
+
+State the graph type: Linked micromap
+
+Explain why the graph type is suited to the data structure:  
+
+- Quantitative variable tied with a geographical locaiton 
+- Two dot plots for two quantitative 
+- etc 
+
+Explain each design choice and cite its supporting reference 
+
+- Sorted by happiness
+- choice, reference 
+- etc 
+
+Comments from peers 
+
+- Does the data structure satisfy the portfolio display requirements?  
+- From the Doumont paper, what type of story is being told? 
+- Is the graph type suited to the data structure? 
+- Other suggestion 
+- etc
+
 
 ## Resources

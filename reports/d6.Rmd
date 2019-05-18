@@ -22,3 +22,8 @@ include_graphics("../figures/d6.png")
 - not a surprise, metals at top of density
 - benefits of fibers - higher strength, higher modulus, lower density
 - depending on whether or not application is strength critical or stiffness critical - look at spec strength or spec mod
+
+-fix order first, then pick color scheme
+-consider sequential or diverging color scheme
+factor type by another variable
+- only really seeing the correlation between the last two variables
