@@ -9,21 +9,44 @@ bibliography: "../resources/references.bib"
 link_citations: yes
 csl: "../resources/journal-of-glaciology.csl"
 ---
+## Introduction  
 
+This display examines material properties of common composite material components. Composite materials are generally used in applications where stiffness/strength is critical while also minimizing weight. 
+
+## Requirements 
+
+This display meets the data requirements for D6 multivariate
+
+- 44 observations 
+- Six quantitative variables: tensile strength, tensile modulus, density, specific strength, specific modulus, ultimate strain.  
+- One categorical variable: material type (3 levels) 
+
+This display also meets the following document requirements 
+
+- Data in your technical area (this display is two of two) 
+
+## Prose
 
 ```{r setup, echo=FALSE}
 library("knitr")
 include_graphics("../figures/d6.png")
 ```
 
-- matrix materials at bottom (but top of strain), makes sense because their purpose is to hold main materials together, not main load bearer
-     * most fibers are generally brittle in nature (at least in tension), the    strain from the matrix materials helps support form
-     * fibers are too small to secure by other methods, where they get their strength from
-- not a surprise, metals at top of density
-- benefits of fibers - higher strength, higher modulus, lower density
-- depending on whether or not application is strength critical or stiffness critical - look at spec strength or spec mod
+*Display 6: Scatterplot matrix detailing different material properties of common composite materials*
 
--fix order first, then pick color scheme
--consider sequential or diverging color scheme
-factor type by another variable
-- only really seeing the correlation between the last two variables
+I used a data set containing material properties of common composite materials from a textbook about composite material mechanics. Commons metals are included under "bulk material" to act as a reference for those unfamiliar with more advanced materials in order to see how they differ [@Doumont2009]. In the scatter plot matrix, each quantitative variable is represented on an axis and combined with an axis from every other quantitative variable. 
+
+A few observations regarding the data:
+
+- Fibers are what give composites their extreme strength to weight ratios.
+    + Much higher tensile strengths and tensile moduli than bulk metals. This is expected due to the relatively small cross sections of the fibers, as the fibers decrease in diameter their tensile strength increases exponentially. The metals simply can't compete.
+    + The strength to weight ratios and stiffness to weight ratios are visible in the specific strengths and specific moduli respectively. Fibers are biased towards the y-axis, while metals are biased towards the x-axis (for the plots with density on the x-axis) indicating the difference in relative strength/stiffness.
+- Bulk polymers are primarily used as matrix materials in composites. These materials are used to hold the fibers in place relative to each other, as well as protect them from their environment.
+    + This explains why the bulk polymers are the only materials with considerable ultimate strains. All other materials have a much smaller ultimate strain closer to 0.
+    + Since they are not the primary component of strength in composite materials, they are conversely at the low end of all other metrics. 
+
+Comparisons between two quantitative variables is helpful, but I really like the plots showing the distribution of the individual variables by types along the scatter plot diagonal. This does a great job at showing where the data is commonly occurring for the given material types. 
+
+## References
+
+<div id="refs"></div>
